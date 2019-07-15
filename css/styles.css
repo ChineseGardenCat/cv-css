@@ -70,12 +70,14 @@ hr {
 
 .cloud-2 {
     position: absolute;
+    width: 20%;
     left: 400px;
     bottom: 200px;
     z-index: 3;
 }
 
 .cloud-3 {
+    width: 20%;
     position: absolute;
     right: 300px;
     z-index: 1;
