@@ -1,58 +1,220 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Matthew's Site</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--    Local CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--  Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900|Ubuntu&display=swap" rel="stylesheet">
+    <!--    Favicon     -->
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <div class="top">
-        <h1>I'm Matthew.</h1>
-        <p class="sub-title">A Developer</p>
-        <img class="cloud-2" src="images/cloud.png" alt="">
-        <img class="cloud-3" src="images/cloud.png" alt="">
-        <img class="mountain-background" src="images/moutain.png" alt="">
-    </div>
-
-    <div class="middle-container">
-        <div class="profile">
-            <img class="profile-pic" src="images/profile_pic.jpeg" alt="">
-            <h2>Hello.</h2>
-            <p class="intro">I'm a software developer in Sydney. I love coding and furry Kittens</p>
-        </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills.</h2>
-            <div class="skill-row">
-                <img class="coding-pic" src="images/coding.jpg" alt="">
-                <h3>Coding & Development</h3>
-                <p>Enjoy to solve problems by coding. Love to try all new languages and frameworks. Over time, I have gained abundant experienced in designing and developing mobile and web applications as well as languages such as HTML, CSS, Javascript, Swift, C#</p>
+<!--Header Section-->
+<section id="header">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <img class="profolio-pic" src="images/profile_pic.jpeg" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills-section-title">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="skill-row">
-                <img class="petting-cat" src="images/petting-cat.jpg" alt="">
-                <h3>Cats</h3>
-                <p>My best skill is actually my understanding of cats. I am so much crazy about those fantastic creatures and love everything about them. Unfortunately I have no cat right now because I'm living in a apartment where pets are not allowed to kept. But I believe the day is not faraway.</p>
+        </nav>
+
+        <div class="row banner">
+            <div class="col-lg-6">
+                <h1 class="header-title">I'm Matthew</h1>
+                <h3 class="header-subtitle">A Developer</h3>
+            </div>
+            <div class="col-lg-6">
+                <img class="profile-pic-1" src="images/profile1.jpg" alt="">
+                <img class="profile-pic-2" src="images/profile2.JPG" alt="">
+                <img class="profile-pic-3" src="images/profile3.JPG" alt="">
             </div>
         </div>
-        <hr>
-        <div class="contact-me">
-            <h2>Get In Touch</h2>
-            <h3>If you love pets as much as I do and want to do something for those who cannot have one at the moment, let's talk!.</h3>
-            <p class="contact-message">Matthew is currently planning to develop a social media which help to propagate people's happiness by sharing their pets.</p>
-            <a class="btn" href="mailto:matthew.tengyu.ma@gmail.com">CONTACT ME</a>
+    </div>
+</section>
+
+<section id="about-me">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="features-description col-lg-4">
+                <h3 class="feature-icon"><i class="fas fa-eye"></i></h3>
+                <h3 class="feature-title">Detail Oriented</h3>
+                <p>Pay attention to details and a perfectionist.</p>
+            </div>
+            <div class="features-description col-lg-4">
+                <h3 class="feature-icon"><i class="fab fa-leanpub"></i></h3>
+                <h3 class="feature-title">Proactive Learner</h3>
+                <p>Keen to learn and proactively seek areas of improvements for better efficiency and performance.</p>
+            </div>
+            <div class="features-description col-lg-4">
+                <h3 class="feature-icon"><i class="fas fa-grin-beam"></i></h3>
+                <h3 class="feature-title">Team Player</h3>
+                <p>Active listener. Keen to learn and share ideas.</p>
+            </div>
         </div>
     </div>
+</section>
 
 
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/matthew-ma-166694134/">LinkedIn</a>
-        <a class="footer-link" href="https://www.facebook.com/profile.php?id=100007187445417">Facebook</a>
-        <a class="footer-link" href="index.html">Hire me</a>
-        <p class="copyright">© 2019 Matthew Ma.</p>
+<!--Skills title-->
+<section id="skills-section-title">
+    <h2>Skills</h2>
+</section>
+<!-- Skills Section -->
+
+<section id="skills">
+
+    <div id="skill-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" datainterval="5000">
+                <h2 class="skill-title">Coding & Development</h2>
+                <img class="skill-image" src="images/coding.jpg" alt="">
+                <em class="skill-description">
+                    Enjoy to solve problems by coding. Love to try all new languages and frameworks.
+                    Over time, I have possessed abundant experienced in designing and developing mobile
+                    and web applications, as well as solid programming skills in languages such as HTML,
+                    CSS, Javascript, Swift, C#
+                </em>
+            </div>
+            <div class="carousel-item" datainterval="5000">
+                <h2 class="skill-title">Cats</h2>
+                <img class="skill-image" src="images/petting-cat.jpg" alt="">
+                <em class="skill-description">
+                    My best skill is actually my understanding of cats. I am so much crazy about those
+                    fantastic creatures and love everything about them. Unfortunately I have no cat right
+                    now because I'm living in a apartment where pets are not allowed to kept. But I believe the
+                    day is not faraway.
+                </em>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#skill-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#skill-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+</section>
+
+<!-- Press -->
+
+<section id="press">
+    <img class="press-icon" src="images/html.png" alt="html-logo">
+    <img class="press-icon" src="images/css.png" alt="css-logo">
+    <img class="press-icon" src="images/bootstrap-4.png" alt="bootstrap-logo">
+    <img class="press-icon" src="images/javascript.png" alt="js-logo">
+    <img class="press-icon" src="images/swift.png" alt="swift-logo">
+    <img class="press-icon" src="images/xamarin.png" alt="xamarin-logo">
+</section>
+
+<!-- contact -->
+
+<section class="white-section" id="contact">
+
+    <h2 class="section-heading">Contact Me</h2>
+    <p>Impressed and willing to contact?</p>
+
+    <div class="row">
+
+        <div class="contact-column col-lg-4 col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Get in touch</h3>
+                </div>
+                <div class="card-body">
+                    <p>Hear more about me?</p>
+                    <p>Share my moment with you</p>
+                    <p>Follow Me on Facebook</p>
+                    <a href="https://www.facebook.com/profile.php?id=100007187445417">
+                        <button class="btn btn-lg btn-block btn-outline-dark" type="button"><i class="social-icon fab fa-facebook-f"></i> FACEBOOK</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-column col-lg-4 col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Hire Me</h3>
+                </div>
+                <div class="card-body">
+                    <p>My Career Insight</p>
+                    <p>My Education History</p>
+                    <p>Learn more about my skills</p>
+                    <a href="https://www.linkedin.com/in/matthew-ma-166694134/">
+                        <button class="btn btn-lg btn-block btn-outline-dark" type="button"><i class="fab fa-linkedin-in"></i> LINKEDIN</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-column col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Cooperate</h3>
+                </div>
+                <div class="card-body">
+                    <p>Matthew is planning a social media project</p>
+                    <p>Help people sharing their happiness</p>
+                    <p>By sharing their pets' best moment</p>
+                    <a href="mailto:matthew.tengyu.ma@gmail.com">
+                        <button class="btn btn-lg btn-block btn-outline-dark" type="button"><i class="social-icon fas fa-envelope"></i> EMAIL</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+
+<footer class="white-section" id="footer">
+    <div class="container-fluid">
+        <a href="https://www.facebook.com/profile.php?id=100007187445417"><i class="social-icon fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/matthew-ma-166694134/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:matthew.tengyu.ma@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+        <a href="https://github.com/ChineseGardenCat"><i class="fab fa-github"></i></a>
+        <p>© Copyright 2019 Tengyu Ma</p>
+    </div>
+</footer>
 
 
+
+<!-- Optional JavaScript -->
+<!--Font Awesome-->
+<script src="https://kit.fontawesome.com/e10a777911.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
